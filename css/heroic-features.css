@@ -1,0 +1,45 @@
+/*!
+ * Start Bootstrap - Heroic Features (https://startbootstrap.com/template-overviews/heroic-features)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-heroic-features/blob/master/LICENSE)
+ */
+
+/*body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+*/
+@media (min-width: 770px) {
+	.card-img-top{
+		position: absolute;
+
+	}
+
+	.card-body{
+		margin-top: 165px;
+	}
+}
+
+
+.card {
+  height: 100%;
+}
+
+
+/*.i-transparent-right{
+	background: linear-gradient(to right, #000, #fff, transparent), url("../img/igor-icontract.png") no-repeat center; 
+	width: 500px;
+	height: 325px; 
+
+}
+
+
+.i-transparent-left{
+	background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); /* Standard syntax (must be last) */
+
+}*/
