@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+  width: 1060px;
+  display: flex;
+  background-color: lightgray;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.header{
+  width: 50%;
+  display: block;
+  margin: 5px auto;
+  /* display:flex;
+  flex-direction: column; */
+}
+
+.header h1{
+  width: 100%;
+  text-align: center;
+}
