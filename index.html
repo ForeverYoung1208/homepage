@@ -4,94 +4,71 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
-
-	  <link rel="stylesheet" href="css/fontawesome.css"/>
-	  <link rel="stylesheet" href="css/brands.css"/>
-	  <link rel="stylesheet" href="css/solid.css"/>  
-    <link href="css/heroic-features.css" rel="stylesheet">	  
-    
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>My family homepage</title>
+  <link rel="stylesheet" href="./css/styles.css">
 
 </head>
 
 <body>
 
-  <!-- Page Content -->
   <div class="container">
 
-    <!-- Jumbotron Header -->
-    <header class="jumbotron my-4">
-      <h1 class="display-3">Welcome!</h1>
-      <p class="lead">Ця домашня сторінка відображає посилання на деякі веб-сторінки та технології, які так чи інакше використовувалися, десь меною чи членами моєї сім'ї, які зацікавлені в веб-програмуванні та дизайні</p>
-      <p class="lead">This homepage represents links to some web pages and technologies that have been used somehow, somewhere by me or my family members who are interested in web programming and design</p>
+    <header class="header">
+      <h1 class="header__title">Welcome!</h1>
+      <p class="header__content">
+        Ця домашня сторінка відображає посилання на деякі веб-сторінки та технології, які так чи інакше використовувалися, десь меною чи членами моєї сім'ї, які зацікавлені в веб-програмуванні та дизайні
+      </p>
+      <p class="header__content-translate">
+        This homepage represents links to some web pages and technologies that   have been used somehow, somewhere by me or my family members who are interested in web programming and design
+      </p>
     </header>
 
-    <!-- Page Features -->
-    <div class="row text-center">
+    <div class="main">
+      <div class="main__cards">
 
-<!--       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card">
-          <img class="card-img-top" src="img/alex-wp.png" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Alex</h4>
-            <ul class="card-text">
-	            <li class="card-text"><a href="http://php.fyoung.dp.ua">PHP Hello World</a></li>
-	            <li class="card-text"><a href="http://wp.fyoung.dp.ua">Wordpress Hello World</a></li>
-	            <li class="card-text"><a href="http://print.fyoung.dp.ua">Трохи практики з Wordpress / Some wordpress practice (Wordpress)</a></li>
-	          </ul>
-          </div>
-          <div class="card-footer">
-          </div>
-        </div>
-      </div> -->
+          <img class="card__image" src="img/igor-tm2.png" alt="">
+          <div class="card__body">
+            <h4 class="card__body-title">Igor</h4>
 
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card">
-          <img class="card-img-top i-transparent-right" src="img/igor-tm2.png" alt="">
-          <!-- <img class="card-img-top i-transparent-left" src="img/igor-icontract.png" alt=""> -->
-          <div class="card-body">
-            <h4 class="card-title">Igor</h4>
-
-            <ul class="card-text">
-              <li><a href="http://tm2.fyoung.dp.ua">Менеджер транспорту / Transport manager (Ruby on Rails) </a></li>                   
-              <li><a href="http://tilegame.fyoung.dp.ua">Невелика гра по складанню пазлів / A little puzzle game (js ES6/css) </a></li>
-              <li><a href="http://todo.fyoung.dp.ua"> Простий перелік завдань / Simle Todo list (ROR/react.js/css) </a></li>              
-              <li><a href="http://icontract.fyoung.dp.ua">Менеджер договорів / Contracts manager (Ruby on Rails, bootstap4) </a></li>
-              
-
-            </ul>
-
-          </div>
-          <div class="card-footer">
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card">
-          <img class="card-img-top i-transparent-right" src="img/nata-blckjck.png" alt="">
-          <!-- <img class="card-img-top i-transparent-left" src="img/nata-pizza.png" alt=""> -->
-          <div class="card-body">
-            <h4 class="card-title">Natali</h4>
-            <ul class="card-text">
-            	<li><a href="http://node.fyoung.dp.ua">Гра Blackjack / Blackjack game (js, jquery, node.js) </a></li>
-            	<li><a href="http://pizza.fyoung.dp.ua">Піцца конструктор / Pizza constructor (js, jquery) </a></li>
+            <ul class="card__body-text">
+              <li>
+                <a href="http://tm2.fyoung.dp.ua">Менеджер транспорту / Transport manager (Ruby on Rails) </a>
+              </li>                   
+              <li>
+                <a href="http://tilegame.fyoung.dp.ua">Невелика гра по складанню пазлів / A little puzzle game (js ES6/css) </a>
+              </li>
+              <li>
+                <a href="http://todo.fyoung.dp.ua"> Простий перелік завдань / Simle Todo list (ROR/react.js/css) </a>
+              </li>              
+              <li>
+                <a href="http://icontract.fyoung.dp.ua">Менеджер договорів / Contracts manager (Ruby on Rails, bootstap4) </a>
+              </li>
             </ul>
           </div>
-          <div class="card-footer">
+        </div>
+      <!-- </div> -->
+
+      <!-- <div class="col-lg-4 col-md-6 mb-4"> -->
+        <div class="card">
+          <img class="card__image" src="img/igor-tm2.png" alt="">
+          <div class="card__body">
+            <h4 class="card__body-title">Natali</h4>
+            <ul class="card__body-text">
+            	<li>
+                <a href="http://node.fyoung.dp.ua">Гра Blackjack / Blackjack game (js, jquery, node.js) </a>
+              </li>
+            	<li>
+                <a href="http://pizza.fyoung.dp.ua">Піцца конструктор / Pizza constructor (js, jquery) </a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
+      <!-- </div> -->
 
-      <div class="col-lg-4 col-md-6 mb-4">
+      <!-- <div class="col-lg-4 col-md-6 mb-4"> -->
         <div class="card">
           <img class="card-img-top" src="img/nastya-fun500x325.png" alt="">
           <div class="card-body">
@@ -115,12 +92,11 @@
   </div>
   <!-- /.container -->
 
-  <!-- Footer -->
+
   <footer class="py-5 bg-dark">
     <div class="container">
       <p class="m-0 text-center text-white">By ForeverYoung, 2018</p>
     </div>
-    <!-- /.container -->
   </footer>
 
 </body>
