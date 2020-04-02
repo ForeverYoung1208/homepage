@@ -5,23 +5,117 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+  background-color: darkcyan;
+}
 .container{
   width: 1060px;
+  margin: 0 auto;
   display: flex;
   background-color: lightgray;
   flex-direction: column;
-  padding: 5px;
 }
+
 
 .header{
   width: 50%;
   display: block;
-  margin: 5px auto;
+  margin: 5px auto 0px;
+  border-bottom: gray 1px solid;
   /* display:flex;
   flex-direction: column; */
+}
+
+.header__title{
+  margin: 1rem auto;
+  font-size: 3rem;
+  font-weight: 700;
+
+}
+
+.header p {
+  text-align: justify;
+  padding-bottom: 1rem;
 }
 
 .header h1{
   width: 100%;
   text-align: center;
+}
+
+.main{
+  background-color: lightgray;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card{
+  width: calc(100%/3 - 1rem);
+  margin: 0.5rem;
+  /* border-left: darkcyan 1px solid; */
+  box-shadow: lightgray 0 0 10px 5px inset;
+  /* background-color: white; */
+  background: linear-gradient(0.4turn, rgba(119, 119, 119, 0.3), rgb(255, 255, 255), rgba(0, 255, 255, 0.2));
+  
+}
+.card ul{
+  list-style-type: none;
+}
+
+.card li{
+  margin-bottom: 2rem;
+  background-color: rgba(211, 211, 211, 0.2);
+  box-shadow: rgba(128, 128, 128, 0.637) 0 0 6px 2px;
+  padding: 0.5rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.card a{
+  text-decoration: none;
+  transition: text-shadow 200ms;  
+}
+.card a:hover{
+  text-shadow: rgb(0, 139, 139) 0 0 20px;
+}
+
+
+.card__body-title{
+  display: inline-block;
+  width: 100%;
+  margin: 2rem auto;
+  color: darkcyan;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  /* font-stretch: expanded; */
+  transition: text-shadow 200ms;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */    
+}
+.card__body-title:hover{
+  text-shadow: cyan 0 0 20px;
+}
+
+.card__image{
+  width: 100%;
+  height: auto;
+}
+
+footer{
+  width: 100%;
+  text-align: center;
+}
+footer p{
+  display: inline-block;
+  width: 300px;
+  margin: 0 auto;
+
+
+  font-style: italic;
+  font-size: smaller;
+  border-top: gray 1px solid;
 }
