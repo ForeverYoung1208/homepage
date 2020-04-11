@@ -1,5 +1,4 @@
 import './css/styles.scss'
-import Img from './img/igor-icontract.png';
 
 class MyDiv{
   constructor(){
@@ -12,6 +11,5 @@ class MyDiv{
   
 }
 
-console.log('[MyDiv]', MyDiv);
 document.querySelector('body').prepend( new MyDiv() )
 
