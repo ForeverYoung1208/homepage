@@ -10,6 +10,7 @@ class MyDiv{
   }
   
 }
-
-document.querySelector('body').prepend( new MyDiv() )
+const newDiv = new MyDiv()
+// document.querySelector('body').prepend( newDiv )
+console.log('[newDiv]', newDiv);
 
