@@ -10,13 +10,18 @@ module.exports = {
   module: {
     rules:[
       {
+        test: /\.js/,
+        exclude: /node_modules/,
+        loader: 'babel-loader'
+      },
+      {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
           {
             loader: 'file-loader',
             options:{
               // name: '[path][name].[ext]',
-              name:'[name].[ext]',
+              name:'[name].[hash].[ext]',
               outputPath: 'img',
               useRelativePath: true
             }
