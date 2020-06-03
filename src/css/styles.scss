@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  width: 1060px;
+  width: 400px;
   margin: 0 auto;
   display: flex;
   background-color: lightgray;
@@ -18,109 +18,109 @@ body {
 }
 
 .header {
-  width: 50%;
+  width: 100%;
   display: block;
   margin: 5px auto 0px;
+  padding: 10px;
+  font-size: 1.5rem;
   border-bottom: gray 1px solid;
-  /* display:flex;
-	flex-direction: column; */
-}
+  
+  p {
+    text-indent: 3rem;
+    text-align: justify;
+    padding-bottom: 1rem;
+  }
+  
+  h1 {
+    width: 100%;
+    text-align: center;
+  }
 
-.header__title {
-  margin: 1rem auto;
-  font-size: 3rem;
-  font-weight: 700;
-}
-
-.header p {
-  text-align: justify;
-  padding-bottom: 1rem;
-}
-
-.header h1 {
-  width: 100%;
-  text-align: center;
+  &__title {
+    margin: 1rem auto;
+    font-size: 3rem;
+    font-weight: 700;
+  }
 }
 
 .main {
   background-color: lightgray;
   padding: 0 0.5rem;
-  display: flex;
-  flex-wrap: wrap;
 }
 
-.card {
-  width: calc(100%/3 - 1rem);
-  margin: 0.5rem;
-  /* border-left: darkcyan 1px solid; */
+.card{
+
+  width: 100%;
+  margin-bottom: 1rem;
   box-shadow: lightgray 0 0 10px 5px inset;
-  /* background-color: white; */
   background: linear-gradient(0.4turn, rgba(119, 119, 119, 0.3), rgb(255, 255, 255), rgba(0, 255, 255, 0.2));
-}
 
-.card ul {
-  list-style-type: none;
-}
+  ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 100%;
+  }
 
-.card li {
-  margin-bottom: 2rem;
-  background-color: rgba(211, 211, 211, 0.2);
-  box-shadow: rgba(128, 128, 128, 0.637) 0 0 6px 2px;
-  padding: 0.5rem;
-  margin: 1rem;
-  text-align: center;
-}
+  li {
+    margin: 1rem;
+    background-color: rgba(211, 211, 211, 0.2);
+    box-shadow: rgba(128, 128, 128, 0.637) 0 0 6px 2px;
+    padding: 0.5rem;
+    text-align: center;
+  }
 
-.card a {
-  text-decoration: none;
-  transition: text-shadow 200ms;
-}
+  a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: text-shadow 200ms;
+  }
 
-.card a:hover {
-  text-shadow: rgb(0, 139, 139) 0 0 20px;
+  a:hover {
+    text-shadow: rgb(0, 139, 139) 0 0 20px;
+  }
+  
+  &__body-title {
+    display: inline-block;
+    width: 100%;
+    margin: 2rem auto;
+    color: darkcyan;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    /* font-stretch: expanded; */
+    transition: text-shadow 200ms;
+    -webkit-user-select: none;
+    /* Chrome all / Safari all */
+    -moz-user-select: none;
+    /* Firefox all */
+    -ms-user-select: none;
+    /* IE 10+ */
+    user-select: none;
+    /* Likely future */
+  }
+  
+  &__body-title:hover {
+    text-shadow: cyan 0 0 20px;
+  }
+  
+  &__image {
+    width: 100%;
+    height: auto;
+  }
 }
-
-.card__body-title {
-  display: inline-block;
-  width: 100%;
-  margin: 2rem auto;
-  color: darkcyan;
-  text-align: center;
-  font-size: 3rem;
-  font-weight: 700;
-  /* font-stretch: expanded; */
-  transition: text-shadow 200ms;
-  -webkit-user-select: none;
-  /* Chrome all / Safari all */
-  -moz-user-select: none;
-  /* Firefox all */
-  -ms-user-select: none;
-  /* IE 10+ */
-  user-select: none;
-  /* Likely future */
-}
-
-.card__body-title:hover {
-  text-shadow: cyan 0 0 20px;
-}
-
-.card__image {
-  width: 100%;
-  height: auto;
-}
-
+  
 footer {
   width: 100%;
   text-align: center;
-}
-
-footer p {
-  display: inline-block;
-  width: 300px;
-  margin: 0 auto;
-  font-style: italic;
-  font-size: smaller;
-  border-top: gray 1px solid;
+  
+  p {
+    display: inline-block;
+    width: 300px;
+    margin: 0 auto;
+    font-style: italic;
+    font-size: smaller;
+    border-top: gray 1px solid;
+  }
 }
 
 #card__test-button{
@@ -130,4 +130,42 @@ footer p {
   &:hover{
     cursor: pointer;
   }
+}
+
+// 576px 992px
+@media( min-width:576px){
+  .container {
+    width: 576px;
+
+  }
+  .header{
+    width: 90%;
+  }
+  .card{
+    ul {
+      grid-template-columns: 50% 50%;
+    }
+    a{
+      font-size: 1rem;
+    }
+  }
+  
+}
+
+@media( min-width:992px){
+  .container {
+    width: 992px;
+    
+  }
+  .header{
+    width: 80%;
+    font-size: 1.5rem;
+  }
+  .card{
+    ul {
+      grid-template-columns: 33% 34% 33%;
+    }
+
+  }
+  
 }
