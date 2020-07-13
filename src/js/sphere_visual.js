@@ -19,8 +19,11 @@ function init() {
   scene = new THREE.Scene();
 
   var i, line, material, p,
-    parameters = [[ 0.25, 0xddffcc, 1 ], [ 0.5, 0xffff99, 1 ], [ 0.75, 0x99ff77, 0.75 ], [ 2.1, 0x00aa55, 0.5 ], [ 1.25, 0x000833, 0.8 ],
+    // parameters = [[ 0.25, 0xddffcc, 1 ], [ 0.5, 0xffff99, 1 ], [ 0.75, 0x99ff77, 0.75 ], [ 2.1, 0x00aa55, 0.5 ], [ 1.25, 0x000833, 0.8 ],
+    //            [ 3.0, 0xaaaaaa, 0.75 ], [ 3.5, 0x55aaff, 0.5 ], [ 4.5, 0xffffff, 0.25 ], [ 5.5, 0x77ff77, 0.125 ]];
+    parameters = [[ 0.25, 0xddffcc, 1 ],  [ 0.75, 0x99ff77, 0.75 ], [ 2.1, 0x00aa55, 0.5 ], [ 1.25, 0x000833, 0.8 ],
                [ 3.0, 0xaaaaaa, 0.75 ], [ 3.5, 0x55aaff, 0.5 ], [ 4.5, 0xffffff, 0.25 ], [ 5.5, 0x77ff77, 0.125 ]];
+
 
   var geometry = createGeometry();
 
