@@ -1,4 +1,6 @@
 import './css/styles.scss'
+import './js/sphere_visual'
+
 
 // const button = document.getElementById('card__test-button');
 // button.addEventListener('click', testButtonClickHandler)
